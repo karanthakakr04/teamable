@@ -70,7 +70,7 @@ app.post('/update-profile', async function (req, res) {
     console.log(payload)
 
     if (isEmptyPayload(payload) || isInvalidEmail(payload)) {
-        res.send({ error: "invalid payload. Couldn't update user profle" })
+        res.send({ error: "invalid payload. Couldn't update user profile" })
     } else { // updating user profile
 
         // Use connect method to connect to the MongoDB server 
